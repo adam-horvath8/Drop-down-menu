@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-size: 1.1rem;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 300px;
+  width: 310px;
+}
+
+.menu-btn-div {
+  display: flex;
+  justify-content: flex-start;
+  height: 300px;
+}
+
+.menu-button {
+  border: none;
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.menu-button:hover {
+  opacity: 0.5;
+}
+
+.drop-down {
+  height: 300px;
+  width: 200px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.drop-down.active {
+  opacity: 1;
+}
+
+span {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: aquamarine;
+}
+
+span:last-child {
+  border-bottom: none;
+}
+
+span:hover {
+  opacity: 0.5;
+}
